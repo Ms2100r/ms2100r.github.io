@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+body {
+  background-color: #ffc15e;
+}
+
+.toggle-button-4 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  box-sizing: content-box;
+  background-color: #ff8d8d33;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.toggle-button-4:has(:checked) {
+  background-color: #75bbff33;
+}
+
+.toggle-button-4::before {
+  position: absolute;
+  left: 5px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #ff8d8d;
+  content: "";
+  transition: left 0.4s;
+}
+
+.toggle-button-4:has(:checked)::before {
+  left: 50px;
+  background-color: #75bbff;
+}
+
+.toggle-button-4::after {
+  position: absolute;
+  left: 26px;
+  transform: translateX(-50%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9em;
+  content: "No";
+  transition: left 0.4s;
+}
+
+.toggle-button-4:has(:checked)::after {
+  left: 71px;
+  content: "Yes";
+}
+
+.toggle-button-4 input {
+  display: none;
+}
+
+.selectbox-6 {
+  position: relative;
+}
+
+.selectbox-6::before,
+.selectbox-6::after {
+  position: absolute;
+  right: 15px;
+  width: 9px;
+  height: 6px;
+  background-color: #535353;
+  content: "";
+  pointer-events: none;
+}
+
+.selectbox-6::before {
+  top: calc(50% - 9px);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.selectbox-6::after {
+  bottom: calc(50% - 9px);
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+.selectbox-6 select {
+  appearance: none;
+  min-width: 230px;
+  height: 2.8em;
+  padding: 0.4em calc(0.8em + 30px) 0.4em 0.8em;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #333333;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.button-14,
+.button-14 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-14 {
+  position: relative;
+  width: 250px;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 25px;
+  border: none;
+  font-size: 1em;
+}
+
+.button-14::before {
+  position: absolute;
+  top: 7px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  border-radius: inherit;
+  box-sizing: inherit;
+  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.2);
+  background-color: #9c5b00;
+  content: "";
+}
+
+.button-14 span {
+  width: 100%;
+  padding: 0.9em 2em;
+  border: 2px solid #000;
+  border-radius: inherit;
+  background-color: #cc8b00;
+  color: #000;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.button-14 span::after {
+  display: inline-block;
+  transform: rotate(45deg);
+  width: 5px;
+  height: 5px;
+  margin-left: 10px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  content: "";
+}
+
+.button-14:hover::before {
+  transition: box-shadow 0.2s;
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.button-14:hover span {
+  transition: transform 0.2s;
+  transform: translateY(2px);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #000 !important;
+}
+/* 訪問済みのリンク色 */
+a:visited {
+  color: #000 !important;
+}
+/* マウスオーバーのリンク色 */
+a:hover {
+  color: #000 !important;
+}
+/* 選択済みのリンク色 */
+a:active {
+  color: #000 !important;
+}
+
+</style>
+</head>
+<body>
+<title>サンマパーク</title>
+<h1>サンマパーク的なホームページ</h1>
+<img
+src=https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG6NNVN64eNHc-am8xgXqwhswald7K3EQlXwrvb1XAj6uEqSgAAEMSctEvgEZFrZ1M-F217YXM5Ywl8eFzVuod5R3UlE1TBs8YLPCuDXfyPuFHeDUfMb1IHCpznwDFP3aessRkMVoaN61_oBx-VFQKQ1GlcjzNqDDszuzqmqTJRGgRE-1sRLgIOz6LNFShfuDPzt2tBYZvY3glcfECHinXocdZZg4hREnZYpTpwp4OcEtLiJFsuva7wWyb9tiX4fO7z1fvyfE3xCX32Y947kaX7uCX_tPtUTLz9kRn-c3uOaz1zIMaaXoXmh5grnuO4hEmQ==/large.jpg?errorImage=false
+width="430" height="340"/> <br />
+<br />
+<h2>⏬️サンマを折り紙で折る無料のパークだよ！！⏬️</h2>
+<img src="k301.jpg" width="300" /> <br />
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25268038.187016554!2d64.07265091059996!3d39.36807158248406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3627050669aa6d4b%3A0xe0dd213937e6e096!2z44Oi44Oz44K044Or!5e0!3m2!1sja!2sjp!4v1757997457943!5m2!1sja!2sjp"
+></iframe>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<br />
+<label class="selectbox-6">
+  <select>
+    <option>プラン選択</option>
+    <option>サンマおるだけ[0円]</option>
+    <option>折る＋焼くごっこ[0円]</option>
+    <option>楽天のサンマ[9080円]</option>
+  </select>
+</label>
+<h3>
+  利用規約に同意しますか？
+  <h3>
+    <label class="toggle-button-4"> <input type="checkbox" /> </label>
+    <button class="button-14">
+      <span><a href="2.html">続行</a></span>
+    </button>
+  </h3>
+</h3>
+
+
+
+</body>
+</html>
